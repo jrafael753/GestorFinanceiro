@@ -7,14 +7,9 @@ package gestorfinanceiro.telacriacao;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyEvent;
 
 /**
  *
@@ -23,6 +18,8 @@ import javafx.scene.input.KeyEvent;
 public class TelacriacaoPresenter implements Initializable {
 
     private ResourceBundle resources = null;
+    @FXML
+    private TextField valor_da_conta;
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {

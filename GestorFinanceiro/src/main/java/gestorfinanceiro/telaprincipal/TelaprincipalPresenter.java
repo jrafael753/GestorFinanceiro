@@ -29,41 +29,18 @@ public class TelaprincipalPresenter implements Initializable {
     private ResourceBundle resources = null;
     private TelacriacaoView telaCriacao;
     @FXML
-    private DatePicker data_busca;
+    private DatePicker databusca;
     @FXML
-    private TextField ano_da_busca;
-    @FXML
-    private Button bt_janeiro;
-    @FXML
-    private Button bt_fevereiro;
-    @FXML
-    private Button bt_marco;
-    @FXML
-    private Button bt_abril;
-    @FXML
-    private Button bt_maio;
-    @FXML
-    private Button bt_junho;
-    @FXML
-    private Button bt_julho;
+    private TextField anodabusca;
     @FXML
     private Button bt_agosto;
     @FXML
-    private Button bt_setembro;
-    @FXML
-    private Button bt_outubro;
-    @FXML
-    private Button bt_novembro;
-    @FXML
-    private Button bt_dezembro;
-    @FXML
     private Label icone_logo;
-    @FXML
-    private Button imp_relatorio;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         this.resources = resources;
     }
+
     @FXML
     private void btJaneiro(ActionEvent event) {
     }
@@ -110,6 +87,10 @@ public class TelaprincipalPresenter implements Initializable {
 
     @FXML
     private void btDezembro(ActionEvent event) {
+    }
+
+    @FXML
+    private void btNovo(ActionEvent event) {
     }
 
     @FXML
