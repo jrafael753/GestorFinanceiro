@@ -9,7 +9,9 @@ import gestorfinanceiro.MainApp;
 import gestorfinanceiro.bean.Contas;
 import gestorfinanceiro.telacriacao.TelacriacaoView;
 import java.net.URL;
+import java.util.Observable;
 import java.util.ResourceBundle;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -37,7 +39,7 @@ public class TelaprincipalPresenter implements Initializable {
     private Button bt_agosto;
     @FXML
     private Label icone_logo;
-    TelacriacaoView telacriacaoView;
+    private TelacriacaoView telacriacaoView;
     @FXML
     private ListView<Contas> llistview;
     
@@ -49,6 +51,7 @@ public class TelaprincipalPresenter implements Initializable {
 
     @FXML
     private void btJaneiro(ActionEvent event) {
+
     }
 
     @FXML

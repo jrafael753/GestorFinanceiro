@@ -5,14 +5,22 @@ import java.util.Date;
 public class Contas {
     private String id;
     private String grupoId;
-    private String descricao;
+    private String descricao,detalhes;
     private String tipo;
     private boolean situacao;//kitado ou em aberto
     private Date dataPagamento,dataVencimento;
-    private float valorDoc,valorPago;
+    private double valorDoc,valorPago;
 
     public String getId() {
         return id;
+    }
+
+    public String getDetalhes() {
+        return detalhes;
+    }
+
+    public void setDetalhes(String detalhes) {
+        this.detalhes = detalhes;
     }
 
     public void setId(String id) {
@@ -67,19 +75,19 @@ public class Contas {
         this.dataVencimento = dataVencimento;
     }
 
-    public float getValorDoc() {
+    public double getValorDoc() {
         return valorDoc;
     }
 
-    public void setValorDoc(float valorDoc) {
+    public void setValorDoc(double valorDoc) {
         this.valorDoc = valorDoc;
     }
 
-    public float getValorPago() {
+    public double getValorPago() {
         return valorPago;
     }
 
-    public void setValorPago(float valorPago) {
+    public void setValorPago(double valorPago) {
         this.valorPago = valorPago;
     }
 
