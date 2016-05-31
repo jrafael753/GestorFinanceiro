@@ -1,7 +1,9 @@
 gestorfinanceiro\telacriacao\TelacriacaoPresenter.class
+gestorfinanceiro\bean\Contas.class
 gestorfinanceiro\MainApp.class
 gestorfinanceiro\telaprincipal\TelaprincipalView.class
 gestorfinanceiro\telacriacao\TelacriacaoView.class
 gestorfinanceiro\telaprincipal\celulas\CelulasView.class
+gestorfinanceiro\bean\Grupo.class
 gestorfinanceiro\telaprincipal\TelaprincipalPresenter.class
 gestorfinanceiro\telaprincipal\celulas\CelulasPresenter.class

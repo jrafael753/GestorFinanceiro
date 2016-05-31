@@ -6,6 +6,7 @@
 package gestorfinanceiro.telaprincipal;
 
 import gestorfinanceiro.MainApp;
+import gestorfinanceiro.bean.Contas;
 import gestorfinanceiro.telacriacao.TelacriacaoView;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,8 +17,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -36,9 +37,14 @@ public class TelaprincipalPresenter implements Initializable {
     private Button bt_agosto;
     @FXML
     private Label icone_logo;
+    TelacriacaoView telacriacaoView;
+    @FXML
+    private ListView<Contas> llistview;
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         this.resources = resources;
+        llistview.setItems(MainApp.getContasList());
     }
 
     @FXML
@@ -91,6 +97,12 @@ public class TelaprincipalPresenter implements Initializable {
 
     @FXML
     private void btNovo(ActionEvent event) {
+       telacriacaoView = new TelacriacaoView();
+       Scene scene = new Scene(telacriacaoView.getView());
+       Stage stage = new Stage();
+       stage.setTitle("Gestor Financeiro");
+       stage.setScene(scene);
+       stage.showAndWait();
     }
 
     @FXML
